@@ -1,0 +1,45 @@
+{% extends 'master1.html' %}
+{% block content %}
+{% load static %} 
+
+<section class="home-section">
+<table class="table table-bordered">
+    <thead>
+      <tr>
+        <th scope="col">r/no</th>
+        <th scope="col">Restaurent name</th>
+        <th scope="col">contact</th>
+        <th scope="col">owner</th>
+        <th scope="col">manage</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <th scope="row">1</th>
+        <td>Paragon</td>
+        <td>9867847484</td>
+        <td>Shadil</td>
+        <td><button type="button" class="btn btn-success">Update</button>
+            <button type="button" class="btn btn-danger">Remove</button></td>
+
+      </tr>
+      <tr>
+        <th scope="row">2</th>
+        <td>Sulthan Palace</td>
+        <td>9836353456</td>
+        <td>Rasal</td>
+        <td><button type="button" class="btn btn-success">Update</button>
+            <button type="button" class="btn btn-danger">Remove</button></td>
+      </tr>
+      <tr>
+        <th scope="row">3</th>
+        <td>Grillax</td>
+        <td>9863542678</td>
+        <td>Firas</td>
+        <td><button type="button" class="btn btn-success">Update</button>
+            <button type="button" class="btn btn-danger">Remove</button></td>
+      </tr>
+    </tbody>
+  </table>
+</section>
+{% endblock %}

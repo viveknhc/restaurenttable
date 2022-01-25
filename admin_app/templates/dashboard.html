@@ -1,0 +1,40 @@
+{% extends 'master1.html' %}
+{% block content %}
+{% load static %} 
+
+<section class="home-section ">
+      <!-- <div class="card-deck px-lg-5 pt-4" > -->
+            <div class="card-deck px-lg-2 pt-4 " >
+        <div class="card bg-primary" style="color: whitesmoke;">
+          <i class="fa fa-user-o fa-5x" aria-hidden="true"></i>
+          <div class="card-body ">
+            <h5 class="card-title">Total Users</h5>
+            <p class="card-text">
+              <h1>
+                1250
+              </h1>
+            </p>
+            
+          </div>
+        </div>
+        <div class="card bg-success" style="color: whitesmoke;">
+          <i class="fa fa-bank fa-5x" aria-hidden="true"></i>
+
+          <div class="card-body">
+            <h5 class="card-title">Total Restaurents</h5>
+
+            <h1>300</h1>
+          </div>
+        </div>
+        <div class="card bg-warning" style="color: whitesmoke;">
+          <i class="fa fa-money fa-5x" aria-hidden="true"></i>
+          <div class="card-body">
+            <h5 class="card-title">Earning</h5>
+           <h1>400$</h1> 
+          </div>
+        </div>
+        
+      </div>
+    </section>
+
+    {% endblock %}
