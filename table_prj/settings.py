@@ -128,8 +128,8 @@ USE_TZ = True
 STATIC_URL = '/static/'
 STATICFILES_DIR=[
     os.path.join(BASE_DIR,'user/static'),
-     os.path.join(BASE_DIR,'admin_app/static'),
-     os.path.join(BASE_DIR,'restaurent/static'),
+    os.path.join(BASE_DIR,'admin_app/static'),
+    os.path.join(BASE_DIR,'restaurent/static'),
    
 
 ]

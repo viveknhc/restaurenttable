@@ -1,0 +1,179 @@
+{% extends 'master.html' %}
+{% block content %}
+{% load static %} 
+<link href="//maxcdn.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css" rel="stylesheet" id="bootstrap-css">
+<script src="//maxcdn.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.min.js"></script>
+<script src="//cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+<!------ Include the above in your HEAD tag ---------->
+
+<div class="container register-form p-5">
+            <div class="form">
+                <div class="note">
+                    <p>If you have a Restaurant,then you can register..!!</p>
+                </div>
+<form action="" id="res">
+                <div class="form-content">
+                    <div class="row">
+                        <div class="col-md-6">
+                            <div class="form-group">
+                                <input name="resname" type="text" class="form-control" placeholder="Restaurant Name *" value=""/>
+                            </div>
+                            <div class="form-group">
+                                <input name="ownname" type="text" class="form-control" placeholder="Owner Name *" value=""/>
+                            </div>
+                            <div class="form-group">
+                                <input name="phone5" type="text" class="form-control" placeholder="Phone Number *" value=""/>
+                            </div>
+                            <div class="form-group">
+                                <input name="email5" type="text" class="form-control" placeholder="Email *" value=""/>
+                            </div>
+                            <div class="form-group">
+                                <input name="table" type="text" class="form-control" placeholder="No.of Tables *" value=""/>
+                            </div>
+                            <div class="form-group">
+                                <input name="chaire" type="text" class="form-control" placeholder="No.of Chaires *" value=""/>
+                            </div>
+                            <div class="form-group">
+                                <input name="caries" type="text" class="form-control" placeholder="Each Table caries *" value=""/>
+                            </div>
+                            
+                        </div>
+                        <div class="col-md-6">
+                            <div class="form-group">
+                                <input name="passa" type="text" class="form-control" placeholder="Your Password *" value=""/>
+                            </div>
+                            <div class="form-group">
+                                <input name="passb" type="text" class="form-control" placeholder="Confirm Password *" value=""/>
+                            </div>
+                            <div class="form-group">
+                                <h5>upload Restaurent image</h5>
+                                    <input type="file" id="myFile" name="filename">
+                                    <input type="file" id="myFile" name="filename">
+                                    <input type="file" id="myFile" name="filename">
+                                    <input type="file" id="myFile" name="filename">
+                            </div>
+                            <div class="form-group">
+                                <h5>upload Menu Images</h5>
+                                    <input type="file" id="myFile" name="filename">
+                                    
+                            </div>
+                        </div>
+                        <div class="row p-2">
+                            <div class="col-md-3">
+                                <input name="country" type="text" class="form-control" placeholder="Country *" value=""/>
+                            </div>
+                            <div class="col-md-3">
+                                <input name="state" type="text" class="form-control" placeholder="State *" value=""/>
+                            </div>
+                            <div class="col-md-3">
+                                <input name="city" type="text" class="form-control" placeholder="City *" value=""/>
+                            </div>
+                            <div class="col-md-3">
+                                <input name="pin" type="number" class="form-control" placeholder="PIN*" value=""/>
+                            </div>
+                        </div>
+                        
+                    </div>
+                    <button type="button" class="btnSubmit">Submit</button>
+                </div>
+            </form>
+            </div>
+        </div>
+
+        <style>
+            .note
+{
+    text-align: center;
+    height: 80px;
+    background: -webkit-linear-gradient(left, #0072ff, #8811c5);
+    color: #fff;
+    font-weight: bold;
+    line-height: 80px;
+}
+.form-content
+{
+    padding: 5%;
+    border: 1px solid #ced4da;
+    margin-bottom: 2%;
+}
+.form-control{
+    border-radius:1.5rem;
+}
+.btnSubmit
+{
+    border:none;
+    border-radius:1.5rem;
+    padding: 1%;
+    width: 20%;
+    cursor: pointer;
+    background: #0062cc;
+    color: #fff;
+}
+        </style>
+
+
+<script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js"></script> 
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-validate/1.19.3/jquery.validate.min.js" integrity="sha512-37T7leoNS06R80c8Ulq7cdCDU5MNQBwlYoy1TX/WUsLFC2eYNqtKlV0QjH7r8JpG/S0GUMZwebnVFLPd6SU5yg==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+<script>
+           $(document).ready(function(){
+       $("#res").validate({
+           rules:{
+               resname:{
+                   required:true,
+                   text:true
+               },
+               ownname:{
+                   required:true,
+                   text:true
+               },
+               email5:{
+                   required:true,
+                   email:true
+               },
+               phone5:{
+                   required:true,
+                   Number:true
+               },
+               country:{
+                   required:true,
+                   text:true
+               },
+               state:{
+                   required:true,
+                   text:true
+               },
+               city:{
+                   required:true,
+                   text:true
+               },
+               passa:{
+                   required:true,
+                   password:true,
+                   minlength:8
+               },
+               passb:{
+                   required:true,
+                   password:true,
+                   minlength:8
+               },
+               table:{
+                  required:true,
+                  Number:true 
+               },
+               chair:{
+                   required:true,
+                   number:true
+
+               },
+               caries:{
+                   required:true,
+                   number:true
+
+               }
+
+
+           }
+       })
+   })
+</script>
+{% endblock %}

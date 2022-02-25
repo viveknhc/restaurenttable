@@ -22,7 +22,7 @@
 <!-- nav start -->
     <section id="header">
         <div class="container">
-            <nav class="navbar navbar-expand-lg navbar-dark fixed-top navbar-toggler" >
+            <nav class="navbar navbar-expand-lg navbar-dark fixed-top navbar-toggler" style="background-color: black;" >
                 <div class="container-fluid">
                     <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="#e6b30e" class="bi bi-house"
                         viewBox="0 0 16 16">
@@ -49,10 +49,10 @@
                                 <a class="nav-link" href="/aboutus">About Us</a>
                             </li>
                             <li class="nav-item">
-                                <a class="nav-link" href="#">Contact Us</a>
+                                <a class="nav-link" href="/contact">Contact Us</a>
                             </li>
                             <li class="nav-item">
-                                <button type="button" class="btn btn-outline-warning" data-bs-toggle="modal" data-bs-target="#exampleModal"  onclick="return log()">LOGIN</button>
+                                <button type="button" class="btn btn-outline-warning" data-bs-toggle="modal" data-bs-target="#exampleModal">LOGIN</button>
                             </li>
                         </ul>
 
@@ -60,15 +60,15 @@
                 </div>
             </nav>
             <!-- navbar code -->
-            <div class="middle">
+            <div class="middle" style="height: 50vh;">
                 <h1 class="text-white display-3 fw-bold">
                     We Help you to find <span class="theme-text">a better
-                        Table</span>.</h1> <br> <br> <br>
-        
+                        Table</span>.</h1>            
             </div>
             <div>
-              <button type="button" class="btn btn-outline-light btn-lg mb-lg-10">REGISTER</button>
-            </div>
+                <a href="/register" type="button" class="btn btn-outline-light btn-lg mb-lg-10">REGISTER</a>
+                <a href="/resreg" type="button" class="btn btn-outline-light btn-lg mb-lg-10">REGISTER AS RESTAURANT</a>
+              </div>
            
         </div>
         <svg class="wave" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320">
@@ -87,15 +87,6 @@
             nav.classList.remove('bg-dark', 'shadow');
           }
         });
-
-
-        function sub(){
-  if(document.getElementById("user").value=="")
-  {
-    document.getElementById("p1").innerHTML="please enter the valid email";
-    return false
-  }
-}
    
       </script>
 
@@ -214,79 +205,6 @@
     </div>
     </a></div>
 </div>
-
-<!-- <div class="py-lg-5" style="width: 100%; background-color: black;">
-    <button class="btn btn-warning" type="button">Register as Restaurent</button>
-    
-  </div> -->
-
-  <!-- <div class="container">
-    <div class="row">
-        <div class="col-lg-12">
-            <div class="section_title text-center">
-                <p class="mb-0">Get in touch</p>
-                <h3 class="font-weight-bold text-capitalize mb-0">Contact Me</h3>
-            </div>
-        </div>
-    </div>
-
-    <div class="row mt-5">
-        <div class="col-lg-12">
-            <div class="text-center">
-                <button type="button" class="btn btn_custom btn_round" data-toggle="modal" data-target="#exampleModalCenter1">Get In Touch</button> -->
-
-                <!-- Modal
-                
-            </div>
-        </div>
-    </div>
-    <div class="row mt-3">
-        <div class="col-lg-12">
-            <div class="contact_social_icons text-center mt-3">
-                <ul class="list-unstyled">
-                    <li class="list-inline-item"><a href="#"><i class="mdi mdi-facebook"></i></a></li>
-                    <li class="list-inline-item"><a href="#"><i class="mdi mdi-twitter"></i></a></li>
-                    <li class="list-inline-item"><a href="#"><i class="mdi mdi-google-plus"></i></a></li>
-                    <li class="list-inline-item"><a href="#"><i class="mdi mdi-apple"></i></a></li>
-                    <li class="list-inline-item"><a href="#"><i class="mdi mdi-dribbble"></i></a></li>
-                    <li class="list-inline-item"><a href="#"><i class="mdi mdi-linkedin"></i></a></li>
-                </ul>
-                <p class="font-weight-bold mt-4"> +1 (922) 219-09-1278</p>
-                <div class="mt-4">
-                    <p class="text-muted mb-0">© Copyright | morrow 2018 All Right Reserved</p>
-                </div>
-            </div>
-        </div>
-    </div>
-</div> -->
-
-<!-- <style>
-    .contact_social_icons ul li a {
-    font-size: 24px;
-    color: #b1b1b1;
-    padding-right: 46px;
-}
-
-.contact_social_icons ul li a:hover{
-    color: #1ba974;
-}
-
-.bg-light {
-    background-color: #f8f9fa!important;
-}
-</style> -->
-
-
-
-
-
-
-
-
- 
-   
-      <!--Contact Modal-->
-      
   </div>
 <style>
   .container .card {
@@ -341,6 +259,7 @@
         left: -2px
     }
 }
+
 </style>
 
   <br><br><br><br>
@@ -362,25 +281,25 @@
           <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
         </div>
         <div class="modal-body">
-            <form>
+            <form id="login" style="color: red;">
                 <div class="mb-3">
-                    <label class="form-label">Email Address</label>
-                    <input type="text" class="form-control" id="username"  placeholder="Username"/>
+                    <label class="form-label" style="color: black;">Email Address</label>
+                    <input name="email" type="text" class="form-control" id="username"  placeholder="Username"/>
                     <br>
                     <p id="p1"> </p>
                 </div>
                 <div class="mb-3">
-                    <label class="form-label">Password</label>
-                    <input type="password" class="form-control" id="password" name="password" placeholder="Password" />
+                    <label class="form-label" style="color: black;">Password</label>
+                    <input name="pass" type="password" class="form-control" id="password" name="password" placeholder="Password" />
                     <p id="p2"></p>
 
                 </div>
                 <div class="mb-3 form-check">
                     <input type="checkbox" class="form-check-input" id="rememberMe" />
-                    <label class="form-check-label" for="rememberMe">Remember me</label>
+                    <label class="form-check-label" for="rememberMe" style="color: black;">Remember me</label>
                 </div>
                 <div class="modal-footer d-block">
-                    <p class="float-start">Not yet account <a href="#">Sign Up</a></p>
+                    <p class="float-start" style="color: green;">Not yet account <a href="#">Sign Up</a></p>
                     <button type="submit" class="btn btn-warning float-end" onclick="return sub()">Submit</button>
                 </div>
             </form>
@@ -391,33 +310,31 @@
       </div>
     </div>
   </div>
-
+  <script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js"></script> 
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-validate/1.19.3/jquery.validate.min.js" integrity="sha512-37T7leoNS06R80c8Ulq7cdCDU5MNQBwlYoy1TX/WUsLFC2eYNqtKlV0QjH7r8JpG/S0GUMZwebnVFLPd6SU5yg==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
 
 <script>
-    function sub(){
-            if(document.getElementById("username").value=="")
-            {
-                
-                document.getElementById("p1").innerHTML="*this field is mandotary";
-                document.getElementById("p1").style.color="red";
-                return false
-            }
-            else if(document.getElementById("password").value=="")
-            {
-                document.getElementById("p2").innerHTML="*password contain min 8 charector set";
-                document.getElementById("p2").style.color="Red"
-                return false
+   $(document).ready(function(){
+       $("#login").validate({
+           rules:{
+               email:{
+                   required:true,
+                   email:true
+               },
+               pass:{
+                   required:true,
+                   maxlength:8,
+                   minlength:8
 
-            }
-           
-            }
+               }
 
+           }
+       })
+   })
+   
         
 </script>
 
-<div><center>
-    <button class="btn btn-warning"> Register As A Restaurent</button></center>
-</div>
 <!-- modal end -->
 
 

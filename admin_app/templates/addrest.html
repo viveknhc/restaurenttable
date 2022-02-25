@@ -2,106 +2,97 @@
 {% extends 'master1.html' %}
 {% block content %}
 {% load static %} 
-
-
-
-
-
     <!-- content -->
     <section class="home-section">
-      <h1>Add Restaurent</h1> <br>
-
-      <div class="card text-center">
-        <div class="card-header">
-          Featured
-        </div>
-        <div class="card-body">
+      <table class="table table-bordered">
+        <thead>
+          <tr>
+            <th scope="col">r/no</th>
+            <th scope="col">Restaurent name</th>
+            <th scope="col">contact</th>
+            <th scope="col">owner</th>
+            <th scope="col">Details</th>
+            <th scope="col">manage</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <th scope="row">1</th>
+            <td>Paragon</td>
+            <td>9867847484</td>
+            <td>Shadil</td>
+            <td><a href="goto" type="button" class="btn btn-primary">Go to</a>
+            </td>
+            <td><button type="button" class="btn btn-success">Accept</button>
+                <button type="button" class="btn btn-danger">Reject</button></td>
+    
+          </tr>
+          <tr>
+            <th scope="row">2</th>
+          
+          </tr>
+          <tr>
+            <th scope="row">3</th>
             
-          <!-- Button trigger modal -->
-<button type="button" class="btn" data-toggle="modal" data-target="#staticBackdrop" style="color: cornsilk;background-color: #1d1b31">
-   add
-  </button>  
-  <!-- Modal -->
+          </tr>
+        </tbody>
+      </table>
 
 
+      <!-- Button trigger modal -->
 
 
-
-        </div>
-       
-      </div>
 
     </section>
 
-
-
-    <!-- modal -->
     
-   
-
-
-
-
-    <div class="modal fade" id="staticBackdrop" data-backdrop="static" data-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
-        <div class="modal-dialog">
-          <div class="modal-content">
-            <div class="modal-header">
-              <h5 class="modal-title" id="staticBackdropLabel">Add Restaurents</h5>
-              <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                <span aria-hidden="true">&times;</span>
-              </button>
-            </div>
-            <div class="modal-body">
-                <form>
-                    <div class="form-row">
-                      <div class="form-group col-md-6">
-                        <label for="inputEmail4">Restaurent Name</label>
-                        <input type="text" class="form-control" id="inputEmail4"> 
-                      </div>
-                      <div class="form-group>
-                        <label for="inputAddress4">Address</label> <br>
-                        <textarea name="" id="" cols="30" rows="10"></textarea>
-                      </div>
-                      <div class="form-row">
-                        <div class="form-group col-md-6">
-                          <label for="inputCity">City</label>
-                          <input type="text" class="form-control" id="inputCity">
-                        </div>
-                        <div class="form-group col-md-6">
-                          <label for="inputState">State</label>
-                          <select id="inputState" class="form-control">
-                            <option selected>Choose...</option>
-                            <option>...</option>
-                          </select>
-                        </div>
-        
-                      </div>
-                      <div class="form-row">
-                      <div class="form-group col-md-6 ml-md-4" style="background-color: #a6a6aa;color: rgb(0, 0, 0);">
-                        <label for="inputFile4 font-weight-bold"><b>Add Restaurents image</b></label>
-                        <div class="file-drop-area" > <span class="choose-file-button">Choose Files</span> <span class="file-message">or drag and drop files here</span> <input type="file" class="file-input" accept=".jfif,.jpg,.jpeg,.png,.gif" multiple> </div>
-                        <div id="divImageMediaPreview"> </div>
-
-                      </div>
-                      <div class="form-group col-md-6 ml-md-4 w-75" style="background-color: #000000;color: rgb(255, 255, 255);border-radius: 20px;">
-                        <label for="inputFile4 font-weight-bolder"><b>Add Menu</b></label>
-                        <div class="file-drop-area"> <span class="choose-file-button">Choose Files</span> <span class="file-message">or drag and drop files here</span> <input type="file" class="file-input" accept=".jfif,.jpg,.jpeg,.png,.gif" multiple> </div>
-                        <div id="divImageMediaPreview"> </div>
-                    </div>
-
-                      </div>
-                    </div>
-                  </form>
-
-                
-            </div>
-            <div class="modal-footer">
-              <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
-              <button type="button" class="btn btn-primary">Register</button>
-            </div>
-          </div>
-        </div>
+<!-- Modal -->
+<!-- <div  class="modal fade" id="staticBackdrop" data-backdrop="static" data-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="staticBackdropLabel">Modal title</h5>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
       </div>
+      <div class="modal-body">
+        <table class="table table-sm table-bordered p-5">
+          <thead>
+            <tr>
+              <th scope="col">Restaurant Name</th>
+              <th scope="col">Location</th>
+              <th scope="col">Type of restaurant</th>
+              <th scope="col">Cuisines</th>
+              <th scope="col">Payment</th>
+
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <th scope="row">Paragon</th>
+              <td>Calicut,Kerala</td>
+              <td>veg And Non-veg</td>
+              <td><ul>
+                <li>pure veg</li>
+                <li>Arabian</li>
+                <li>chinese</li>
+                <li>Italian</li>
+              </ul></td>
+              <td>paid</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+      </div>
+    </div>
+  </div>
+</div> -->
+
+
+   
 
       {% endblock %}
 

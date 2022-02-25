@@ -34,8 +34,8 @@ svg.wave {
   display: flex;
   justify-content: start;
   align-items: center;
-  height: 80vh;
-  width: 70%;
+  /* height: 80vh;
+  width: 70%; */
 }
 .middle h1 {
   font-size: 70px;

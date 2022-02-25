@@ -1,0 +1,31 @@
+{% extends 'master2.html' %}
+{% block content %}
+{% load static %} 
+<div class="m-5" style="background-color: rgb(255, 255, 255);">
+<form action="" id="">
+    <div class="form-content">
+        <div class="row p-5">
+            <div class="col-md-6">
+
+                <div class="form-group">
+                    <input name="table" type="text" class="form-control" placeholder="No.of Tables *" value=""/>
+                </div>
+                <div class="form-group">
+                    <input name="chaire" type="text" class="form-control" placeholder="No.of Chaires *" value=""/>
+                </div>
+                <div class="form-group">
+                    <input name="caries" type="text" class="form-control" placeholder="Each Table caries *" value=""/>
+                </div>
+                <div class="form-group">
+                    <input name="caries" type="text" class="form-control" placeholder="Type of Dining *" value=""/><div class="col-md-6"><i class="fa fa-plus"></i></div>
+                </div>
+                <div>
+                    <button type="button" class="btn btn-warning">Update</button></div>
+            </div>
+              
+        </div>
+        
+    </div>
+</form>
+</div>
+{% endblock %}

@@ -8,5 +8,7 @@ urlpatterns=[
     path('viewrest',views.viewfn,name='viewrest'),
     path('viewuser',views.viewusfn,name='viewuser'),
     path('request',views.reqfn,name='request'),
+    path('rating',views.rafn,name='rating'),
+    path('goto',views.gotofn,name='goto'),
 
 ]

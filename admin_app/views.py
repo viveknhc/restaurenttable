@@ -16,3 +16,7 @@ def viewusfn(request):
     return render(request,"viewuser.html")
 def reqfn(request):
     return render(request,"request.html")
+def rafn(request):
+    return render(request,"reviewrating.html")
+def gotofn(request):
+    return render(request,"goto.html")

@@ -15,3 +15,11 @@ def paymentfn(request):
     return render(request,"payment.html")
 def orderfn(request):
     return render(request,"order.html")
+def newmenufn(request):
+    return render(request,"newmenu.html")
+def updatetablefn(request):
+    return render(request,"updatetable.html")
+def viewtablefn(request):
+    return render(request,"viewtable.html")
+def profilefn(request):
+    return render(request,"profile.html")

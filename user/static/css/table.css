@@ -1,4 +1,11 @@
 /* head */
+
+* {
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
 #header {
     background-position: center;
     background-size: cover;
@@ -263,16 +270,6 @@ h6 {
   border: none
 }
 
-/* .btn {
-  border: 1px solid orange;
-  border-radius: 10px;
-  background-color: #fff
-}
-
-.btn:hover {
-  color: #fff;
-  background-color: orange
-} */
 
 .card-body {
   padding: 8px

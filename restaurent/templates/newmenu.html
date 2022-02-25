@@ -1,0 +1,38 @@
+{% extends 'master2.html' %}
+{% block content %}
+{% load static %} 
+
+<script src="https://code.jquery.com/jquery-3.6.0.slim.min.js"></script>
+<div class="p-5">
+<label for="">cuisine</label>
+    <input type="text" id="txt1">
+    <label for="">Food </label>
+    <input type="text" id="txt2">
+    <label for="">Price</label>
+    <input type="text" id="txt3">
+    <button id="add">Add</button>
+  
+</div>
+    <table border="1px" class="table table-light table-bordered">
+        <tr>
+          
+          <th>cuisine</th>
+          <th>Food</th>
+          <th>price</th>
+          
+        </tr>
+</table>
+
+
+<script>
+  $('#add').click(function(){
+      a=$("#txt1").val()
+      b=$("#txt2").val()
+      c=$("#txt3").val()
+     
+      $('table').append('<tr><td>'+a+'</td><td>'+b+'</td><td>'+c+'</td></tr>')
+      
+      
+  })
+</script>
+{% endblock %}
