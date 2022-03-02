@@ -1,56 +1,64 @@
 {% load static %}
 <!doctype html>
 <html lang="en">
-  <head>
-    <!-- Required meta tags -->
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
-    <!-- Bootstrap CSS -->
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/css/bootstrap.min.css" integrity="sha384-zCbKRCUGaJDkqS1kPbPd7TveP5iyJE0EjAuZQTgFLD2ylzuqKfdKlfG/eSrtxUkn" crossorigin="anonymous">
-<!-- css -->
-<link rel="stylesheet" href="{% static 'css/table.css' %}">
-<link rel="stylesheet" href="{% static 'css/resto.css' %}">
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-<link href='https://unpkg.com/boxicons@2.0.7/css/boxicons.min.css' rel='stylesheet'>
+<head>
+  <!-- Required meta tags -->
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
-
-<!-- fontawsome -->
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-    <title>Book My Table</title>
-  </head>
-  <body>
+  <!-- Bootstrap CSS -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/css/bootstrap.min.css"
+    integrity="sha384-zCbKRCUGaJDkqS1kPbPd7TveP5iyJE0EjAuZQTgFLD2ylzuqKfdKlfG/eSrtxUkn" crossorigin="anonymous">
+  <!-- css -->
+  <link rel="stylesheet" href="{% static 'css/table.css' %}">
+  <link rel="stylesheet" href="{% static 'css/resto.css' %}">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <link href='https://unpkg.com/boxicons@2.0.7/css/boxicons.min.css' rel='stylesheet'>
 
 
-    <!-- Optional JavaScript; choose one of the two! -->
+  <!-- fontawsome -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <title>Book My Table</title>
+</head>
 
-    <!-- Option 1: jQuery and Bootstrap Bundle (includes Popper) -->
-    <script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-fQybjgWLrvvRgtW6bFlB7jaZrFsaBXjsOMm/tB9LTS58ONXgqbR9W8oWht/amnpF" crossorigin="anonymous"></script>
+<body>
 
-    <!-- Option 2: Separate Popper and Bootstrap JS -->
-    <!--
+
+  <!-- Optional JavaScript; choose one of the two! -->
+
+  <!-- Option 1: jQuery and Bootstrap Bundle (includes Popper) -->
+  <script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js"
+    integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+    crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-fQybjgWLrvvRgtW6bFlB7jaZrFsaBXjsOMm/tB9LTS58ONXgqbR9W8oWht/amnpF"
+    crossorigin="anonymous"></script>
+
+  <!-- Option 2: Separate Popper and Bootstrap JS -->
+  <!--
     <script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/js/bootstrap.min.js" integrity="sha384-VHvPCCyXqtD5DqJeNxl2dtTyhF78xXNXdkwX1CZeRusQfRKp+tA7hAShOK/B/fQ2" crossorigin="anonymous"></script>
     -->
-<!-- nav start-->
-<!-- Just an image -->
-<nav class="navbar navbar-expand-lg  sticky-top" style="background-color: rgb(0, 0, 0);color: rgb(212, 210, 208);">
+  <!-- nav start-->
+  <!-- Just an image -->
+  <nav class="navbar navbar-expand-lg  sticky-top navbar-dark" style="background-color: black;">
     <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="#e6b30e" class="bi bi-house"
-                        viewBox="0 0 16 16">
-                        <path fill-rule="evenodd"
-                            d="M2 13.5V7h1v6.5a.5.5 0 0 0 .5.5h9a.5.5 0 0 0 .5-.5V7h1v6.5a1.5 1.5 0 0 1-1.5 1.5h-9A1.5 1.5 0 0 1 2 13.5zm11-11V6l-2-2V2.5a.5.5 0 0 1 .5-.5h1a.5.5 0 0 1 .5.5z" />
-                        <path fill-rule="evenodd"
-                            d="M7.293 1.5a1 1 0 0 1 1.414 0l6.647 6.646a.5.5 0 0 1-.708.708L8 2.207 1.354 8.854a.5.5 0 1 1-.708-.708L7.293 1.5z" />
-                    </svg>  &nbsp;
-    <div style="color: yellow;font-size: 20px;" > Book My Table</div>
-    <button style="background-color: rgb(236, 222, 28);color: brown;" class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+      viewBox="0 0 16 16">
+      <path fill-rule="evenodd"
+        d="M2 13.5V7h1v6.5a.5.5 0 0 0 .5.5h9a.5.5 0 0 0 .5-.5V7h1v6.5a1.5 1.5 0 0 1-1.5 1.5h-9A1.5 1.5 0 0 1 2 13.5zm11-11V6l-2-2V2.5a.5.5 0 0 1 .5-.5h1a.5.5 0 0 1 .5.5z" />
+      <path fill-rule="evenodd"
+        d="M7.293 1.5a1 1 0 0 1 1.414 0l6.647 6.646a.5.5 0 0 1-.708.708L8 2.207 1.354 8.854a.5.5 0 1 1-.708-.708L7.293 1.5z" />
+    </svg> &nbsp;
+    <div style="color: yellow;font-size: 20px;"> Book My Table</div>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+      aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
       <span class="navbar-toggler-icon" style="background-color: black;"></span>
     </button>
-  
+
     <div class="collapse navbar-collapse" id="navbarSupportedContent">
-    
+
       <ul class="navbar-nav ml-auto">
         <!-- <li><form class="form-inline my-2 my-lg-0 ml-auto" >
             <input class="form-control mr-sm-2 ml-auto" type="search" placeholder="Search" aria-label="Search">
@@ -60,307 +68,417 @@
           <a class="nav-link" href="/home">Home <span class="sr-only">(current)</span></a>
         </li>
         <li class="nav-item active">
-            <a class="nav-link" href="/table">Tables<span class="sr-only">(current)</span></a>
-          </li>
-          <li class="nav-item active">
-            <a class="nav-link" href="/aboutus">about us <span class="sr-only">(current)</span></a> 
-          </li>
-       
+          <a class="nav-link" href="/table">Tables<span class="sr-only">(current)</span></a>
+        </li>
+        <li class="nav-item active">
+          <a class="nav-link" href="/aboutus">about us <span class="sr-only">(current)</span></a>
+        </li>
+
         <li class="nav-item active">
           <a class="nav-link" href="contact">contact<span class="sr-only">(current)</span></a>
         </li>
         <li>
-          <button type="button" class="btn bg-warning" data-toggle="modal" data-target="#exampleModal" style="color: black;">Login</button>
+          <button type="button" class="btn bg-warning" data-toggle="modal" data-target="#exampleModal"
+            style="color: black;">Login</button>
         </li>
       </ul>
-      
+
     </div>
-    
-  </nav> 
 
 
-<div class="row">
-  <div class="col-lg-8 p-5">
-    <img src="{% static 'images/c2.jpg' %}"  class="img-fluid" alt="..." style="width: 100%;height: 500px;">
-    <div class="ml-lg-3 shadow-lg p-lg-3">
-    <h2 class="font-weight-bold">Paragon Restaurent</h2>
-    <small>Calicut,kerala</small>
-    <hr>
-    
-    <hr>
-    <p class="card-text">Calicut Paragon is an Indian restaurant established in 1939. The restaurant is well known for the variety of ‘Malabar’ cuisines and enjoys cult status in Calicut and Dubai</p>
-    <a href="https://www.google.com/search?gs_ssp=eJzj4tbP1TcwNLIwzKhIU2A0YHRg8BIqSCxKTM_PUyhKLS5JLC1KzCsBALwGC2I&q=paragon%20restaurant&rlz=1C1CHBF_enIN979IN979&oq=para&aqs=chrome.1.69i57j46i39i199i291j0i67l3j0i67i433j69i60j69i65.3068j0j7&sourceid=chrome&ie=UTF-8&tbs=lf:1,lf_ui:9&tbm=lcl&sxsrf=AOaemvJjSpuroCfpTXXMo4D9PuGMHm4UKg:1642922340113&rflfq=1&num=10&rldimm=201360167669921962&lqi=ChJwYXJhZ29uIHJlc3RhdXJhbnRIq5m3-emAgIAIWhwQABABGAAYASIScGFyYWdvbiByZXN0YXVyYW50kgERaW5kaWFuX3Jlc3RhdXJhbnSaASRDaGREU1VoTk1HOW5TMFZKUTBGblNVTnJOVmxwVVRoM1JSQUKqARoQASoWIhJwYXJhZ29uIHJlc3RhdXJhbnQoAA&phdesc=wxPv2yyqvLU&ved=2ahUKEwi7vObTqsf1AhVuzzgGHTstA8oQvS56BAgtED0&rlst=f#rlfi=hd:;si:201360167669921962,l,ChJwYXJhZ29uIHJlc3RhdXJhbnRIq5m3-emAgIAIWhwQABABGAAYASIScGFyYWdvbiByZXN0YXVyYW50kgERaW5kaWFuX3Jlc3RhdXJhbnSaASRDaGREU1VoTk1HOW5TMFZKUTBGblNVTnJOVmxwVVRoM1JSQUKqARoQASoWIhJwYXJhZ29uIHJlc3RhdXJhbnQoAA,y,wxPv2yyqvLU;mv:[[13.336035865145204,82.19693979375],[7.307842760802707,69.93619760625],null,[10.336395228336118,76.0665687],7]"> <i class="fa fa-location-arrow" aria-hidden="true"></i>Get direction</a>
-    </div>
-    <hr style="size: 10px;">
-    <div class="row shadow p-lg-5">
-      <div class="col-lg-3"><a href="">Menu</a> </div>
-      <div class="col-lg-3"><a href="">About</a> </div>
-      <div class="col-lg-3"><a href="">Photos</a> </div>
-      <div class="col-lg-3"><a href="">Review</a> </div>
-    </div>
-<div class="shadow">
-  <h4 class="pl-5 pt-4">Menu</h4><br>
-  <a target="_blank" href="{% static 'images/Menue.jpg' %}">
-  <img src="{% static 'images/Menue.jpg' %}" class="img-thumbnail w-25 h-25" alt="..."></a>
-</div><hr>
-<h4 class="pl-5 pt-4">About</h4>
-<div class="row shadow py-lg-5">
+  </nav>
+  <div class="container">
 
-  <div class="col-lg-6 border-primary" style="">Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusamus veritatis suscipit dolore itaque. Nemo esse blanditiis, dicta repellendus laborum et fugit. Distinctio eius omnis et animi reiciendis ex reprehenderit libero!</div>
-  <div class="col-lg-6"><iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d250523.2706682098!2d75.8266025378334!3d11.156053314124236!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3ba65933741e5001%3A0x2cb600171e0f8aa!2sParagon%20Restaurant!5e0!3m2!1sen!2sin!4v1642398357334!5m2!1sen!2sin" style="border:0;" allowfullscreen="" loading="lazy"></iframe></div>
-</div>
+    <div class="row">
+      <div class="col-lg-8 p-5">
+        <img src="{% static 'images/c2.jpg' %}" class="img-fluid" alt="..." style="width: 100%;height: 500px;">
+        <div class="ml-lg-3 shadow-lg p-lg-3 p-3">
+          <h2 class="font-weight-bold">Paragon Restaurent</h2>
+          <small>Calicut,kerala</small>
+          <hr>
 
-
-
-
-<div>
-  <style>
-    div.gallery {
-      border: 1px solid #ccc;
-    }
-    
-    div.gallery:hover {
-      border: 1px solid #777;
-    }
-    
-    div.gallery img {
-      width: 100%;
-      height: auto;
-    }
-    
-    div.desc {
-      padding: 15px;
-      text-align: center;
-    }
-    
-    * {
-      box-sizing: border-box;
-    }
-    
-    .responsive {
-      padding: 0 6px;
-      float: left;
-      width: 24.99999%;
-    }
-    
-    @media only screen and (max-width: 700px) {
-      .responsive {
-        width: 49.99999%;
-        margin: 6px 0;
-      }
-    }
-    
-    @media only screen and (max-width: 500px) {
-      .responsive {
-        width: 100%;
-      }
-    }
-    
-    .clearfix:after {
-      content: "";
-      display: table;
-      clear: both;
-    }
-    </style>
-  
-  <h4 class="pl-5 pt-4">Photos</h4>
-    <div class="responsive">
-      <div class="gallery">
-        <a target="_blank" href="{% static 'images/c2.jpg' %}">
-          <img src="{% static 'images/c2.jpg' %}" alt="Cinque Terre" width="600" height="400">
-        </a>
-        <div class="desc">All</div>
-      </div>
-    </div>
-    
-    
-    <div class="responsive">
-      <div class="gallery">
-        <a target="_blank" href="{% static 'images/c2.jpg' %}">
-          <img src="{% static 'images/c2.jpg' %}" alt="Forest" width="600" height="400">
-        </a>
-        <div class="desc">Food</div>
-      </div>
-    </div>
-    
-    <div class="responsive">
-      <div class="gallery">
-        <a target="_blank" href="{% static 'images/c2.jpg' %}">
-          <img src="{% static 'images/c2.jpg' %}" alt="Northern Lights" width="600" height="400">
-        </a>
-        <div class="desc">Interior</div>
-      </div>
-    </div>
-    
-    <div class="responsive">
-      <div class="gallery">
-        <a target="_blank" href="{% static 'images/c2.jpg' %}">
-          <img src="{% static 'images/c2.jpg' %}" alt="Mountains" width="600" height="400">
-        </a>
-        <div class="desc">Drinks</div>
-      </div>
-    </div>
-    
-    <div class="clearfix"></div>
-
-
-</div>
-</div>
- 
-  <div class="col-lg-4 shadow-lg container p-lg-5">
-    
-<style>
-  label{
-    color: rgb(0, 0, 0);
-  }
-  div.sticky {
-  position: -webkit-sticky;
-  position: sticky;
-  top: 0;
-  }
-</style>
-<div class="sticky">
-    <form class="p-5 shadow-lg">
-      <h4>Make Reservation</h4>
-      <div class="form-group">
-        <label for="formGroupExampleInput">Party Size</label>
-        <select id="selectparty" class="form-control">
-          <option selected>one person</option>
-          <option>two person</option>
-        </select>
-      </div>
-      <div class="form-group">
-        <label for="formGroupExampleInput">date</label>
-          <input type="date" class="form-control">
-      </div>
-      <div class="form-group">
-        <label for="formGroupExampleInput">date</label>
-          <input type="time" class="form-control">
-      </div>
-      <div class="form-group">
-        <label for="formGroupExampleInput2">Select Dining</label>
-        <select id="selectparty" class="form-control">
-          <option selected>Family</option>
-          <option>Private dining</option>
-          <option>out Door</option>
-          <option>Couples</option>
-        </select>
-      </div>
-      <div class="form-group">
-        <label for="formGroupExampleInput2">Select Food</label>
-        <select id="selectparty" class="form-control">
-          <option selected>demo1</option>
-          <option>demo2</option>
-          <option>demo3</option>
-          <option>demo4</option>
-        </select><i class="fa fa-plus" style="float: right;"></i>
-        
-      </div>
-      <div class="form-group">
-        <label for="exampleFormControlTextarea1">other requirments</label>
-        <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
-      </div>
-
-
-      <div class="form-group">
-        <button type="button" class="btn" style="background-color: rgb(3, 3, 1);color: yellow">Available Slote</button>
-      </div>
-
-      
-    </form>
-  </div>
-
-
-    
-    </div>
-    
-      
-  
-</div>
-
-<div class="p-5">
-  <h4 class="pl-5 pt-4">Review</h4>
-  <div class="shadow">
-    <div class="row shadow py-lg-5 pb-2">
-
-      
-  
-      <div class="col-lg-2 border-primary" style=""><i class="fa fa-user-circle fa-5x"></i></div>
-      <div class="col-lg-10"><p class="font-weight-bold">Shadil K M</p><hr>
-        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Laboriosam cum tempora, distinctio doloremque maxime, et culpa deleniti ipsa nisi modi nesciunt dolorem sint aut impedit eaque architecto eius esse corporis?</p>
-        <i class="f"></i>
-         </div><hr>
-    </div>
-    <div class="row shadow py-lg-5 pb-2">
-  
-      <div class="col-lg-2 border-primary" style=""><i class="fa fa-user-circle fa-5x"></i></div>
-      <div class="col-lg-10"><p class="font-weight-bold">Shadil K M</p> <hr>
-      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Laboriosam cum tempora, distinctio doloremque maxime, et culpa deleniti ipsa nisi modi nesciunt dolorem sint aut impedit eaque architecto eius esse corporis?</p>
-      </div><hr>
-    </div>
-    <div class="row shadow py-lg-5 pb-2">
-  
-      <div class="col-lg-2 border-primary" style=""><i class="fa fa-user-circle fa-5x"></i></div>
-      <div class="col-lg-10"><p class="font-weight-bold">Shadil K M</p><hr>
-        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Laboriosam cum tempora, distinctio doloremque maxime, et culpa deleniti ipsa nisi modi nesciunt dolorem sint aut impedit eaque architecto eius esse corporis?</p>
-        </div><hr>
-    </div>
-    <div class="row shadow py-lg-5 pb-2">
-  
-      <div class="col-lg-2 border-primary" style=""><i class="fa fa-user-circle fa-5x"></i></div>
-      <div class="col-lg-10"><p class="font-weight-bold">Shadil K M</p><hr>
-        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Laboriosam cum tempora, distinctio doloremque maxime, et culpa deleniti ipsa nisi modi nesciunt dolorem sint aut impedit eaque architecto eius esse corporis?</p>
-        </div><hr>
-    </div>
-  </div>
-  
-  <div class="shadow p-5">
-    <input type="text" placeholder="comments.." class="h3 w-50" style="border-radius: 20;">
-    <a href="" type="button" class="btn btn-outline-light btn-lg mb-lg-10"><i class="fa fa-send"></i></a>
-  </div>
-  <br><br><br><br>
-  <div></div>
-    </div></div>
-  
- 
-
-<div>
-  <footer class="footer-section">
-      <div class="container">
-          <div class="footer-cta pt-5 pb-5">
-              <div class="row">
-                  <div class="col-xl-4 col-md-4 mb-30">
-                      <div class="single-cta">
-                          <i class="fas fa-map-marker-alt"></i>
-                          <div class="cta-text">
-                              <h4>Find us</h4>
-                              <span>1010 Avenue, sw 54321, chandigarh</span>
-                          </div>
-                      </div>
-                  </div>
-                  <div class="col-xl-4 col-md-4 mb-30">
-                      <div class="single-cta">
-                          <i class="fa fa-phone"></i>
-                          <div class="cta-text">
-                              <h4>Call us</h4>
-                              <span>9876543210 0</span>
-                          </div>
-                      </div>
-                  </div>
-                  <div class="col-xl-4 col-md-4 mb-30">
-                      <div class="single-cta">
-                          <i class="fa fa-envelope-open"></i>
-                          <div class="cta-text">
-                              <h4>Mail us</h4>
-                              <span>mail@info.com</span>
-                          </div>
-                      </div>
-                  </div>
+          <hr>
+          <p class="card-text">Calicut Paragon is an Indian restaurant established in 1939. The restaurant is well known
+            for the variety of ‘Malabar’ cuisines and enjoys cult status in Calicut and Dubai</p>
+          <a
+            href="https://www.google.com/search?gs_ssp=eJzj4tbP1TcwNLIwzKhIU2A0YHRg8BIqSCxKTM_PUyhKLS5JLC1KzCsBALwGC2I&q=paragon%20restaurant&rlz=1C1CHBF_enIN979IN979&oq=para&aqs=chrome.1.69i57j46i39i199i291j0i67l3j0i67i433j69i60j69i65.3068j0j7&sourceid=chrome&ie=UTF-8&tbs=lf:1,lf_ui:9&tbm=lcl&sxsrf=AOaemvJjSpuroCfpTXXMo4D9PuGMHm4UKg:1642922340113&rflfq=1&num=10&rldimm=201360167669921962&lqi=ChJwYXJhZ29uIHJlc3RhdXJhbnRIq5m3-emAgIAIWhwQABABGAAYASIScGFyYWdvbiByZXN0YXVyYW50kgERaW5kaWFuX3Jlc3RhdXJhbnSaASRDaGREU1VoTk1HOW5TMFZKUTBGblNVTnJOVmxwVVRoM1JSQUKqARoQASoWIhJwYXJhZ29uIHJlc3RhdXJhbnQoAA&phdesc=wxPv2yyqvLU&ved=2ahUKEwi7vObTqsf1AhVuzzgGHTstA8oQvS56BAgtED0&rlst=f#rlfi=hd:;si:201360167669921962,l,ChJwYXJhZ29uIHJlc3RhdXJhbnRIq5m3-emAgIAIWhwQABABGAAYASIScGFyYWdvbiByZXN0YXVyYW50kgERaW5kaWFuX3Jlc3RhdXJhbnSaASRDaGREU1VoTk1HOW5TMFZKUTBGblNVTnJOVmxwVVRoM1JSQUKqARoQASoWIhJwYXJhZ29uIHJlc3RhdXJhbnQoAA,y,wxPv2yyqvLU;mv:[[13.336035865145204,82.19693979375],[7.307842760802707,69.93619760625],null,[10.336395228336118,76.0665687],7]">
+            <i class="fa fa-location-arrow" aria-hidden="true"></i>Get direction</a>
+        </div>
+        <hr style="size: 10px;">
+        <div class="row shadow p-lg-5">
+          <nav>
+            <div class="nav nav-tabs" id="nav-tab" role="tablist">
+              <a class="nav-link active" id="nav-menu-tab" data-toggle="tab" href="#nav-menu" role="tab"
+                aria-controls="nav-menu" aria-selected="true">Menu</a>
+              <a class="nav-link" id="nav-About-tab" data-toggle="tab" href="#nav-About" role="tab"
+                aria-controls="nav-About" aria-selected="false">About</a>
+              <a class="nav-link" id="nav-contact-tab" data-toggle="tab" href="#nav-contact" role="tab"
+                aria-controls="nav-contact" aria-selected="false">Contact</a>
+              <a class="nav-link" id="nav-map-tab" data-toggle="tab" href="#nav-map" role="tab" aria-controls="nav-map"
+                aria-selected="false">Map</a>
+            </div>
+          </nav>
+          <div class="tab-content" id="nav-tabContent">
+            <div class="tab-pane fade show active" id="nav-menu" role="tabpanel" aria-labelledby="nav-home-tab">
+              <div class="shadow">
+                <a target="_blank" href="{% static 'images/Menue.jpg' %}">
+                  <img src="{% static 'images/Menue.jpg' %}" class="img-thumbnail w-25 h-25" alt="..."></a>
               </div>
+            </div>
+            <div class="tab-pane fade" id="nav-About" role="tabpanel" aria-labelledby="nav-profile-tab">
+              <div class="row shadow py-lg-5">
+
+                <div class="col-lg-6 border-primary" style="">Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                  Accusamus veritatis suscipit dolore itaque. Nemo esse blanditiis, dicta repellendus laborum et fugit.
+                  Distinctio eius omnis et animi reiciendis ex reprehenderit libero!</div>
+
+              </div>
+            </div>
+            <div class="tab-pane fade" id="nav-contact" role="tabpanel" aria-labelledby="nav-contact-tab">
+
+              <div class="container">
+                <h1>8547768153</h1>
+              </div>
+            </div>
+            <div class="tab-pane fade" id="nav-map" role="tabpanel" aria-labelledby="nav-contact-tab">
+              <div class="col-lg-6 w-50"><iframe
+                  src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d250523.2706682098!2d75.8266025378334!3d11.156053314124236!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3ba65933741e5001%3A0x2cb600171e0f8aa!2sParagon%20Restaurant!5e0!3m2!1sen!2sin!4v1642398357334!5m2!1sen!2sin"
+                  style="border:0;" allowfullscreen="" loading="lazy"></iframe></div>
+
+            </div>
           </div>
-          <div class="footer-content pt-5 pb-5">
-              <div class="row">
-                  <!-- <div class="col-xl-4 col-lg-4 mb-50">
+        </div>
+
+
+
+
+
+
+
+        <div>
+          <style>
+            div.gallery {
+              border: 1px solid #ccc;
+            }
+
+            div.gallery:hover {
+              border: 1px solid #777;
+            }
+
+            div.gallery img {
+              width: 100%;
+              height: auto;
+            }
+
+            div.desc {
+              padding: 15px;
+              text-align: center;
+            }
+
+            * {
+              box-sizing: border-box;
+            }
+
+            .responsive {
+              padding: 0 6px;
+              float: left;
+              width: 24.99999%;
+            }
+
+            @media only screen and (max-width: 700px) {
+              .responsive {
+                width: 49.99999%;
+                margin: 6px 0;
+              }
+            }
+
+            @media only screen and (max-width: 500px) {
+              .responsive {
+                width: 100%;
+              }
+            }
+
+            .clearfix:after {
+              content: "";
+              display: table;
+              clear: both;
+            }
+          </style>
+
+
+
+
+
+
+
+        </div>
+      </div>
+
+      <div class="col-lg-4 pt-lg-5">
+
+        <style>
+          label {
+            color: rgb(0, 0, 0);
+          }
+
+          div.sticky {
+            position: -webkit-sticky;
+            position: sticky;
+            top: 0;
+          }
+        </style>
+        
+        <div class="sticky">
+          <form class="p-5 shadow-lg">
+            <h4 class="pt-lg-5">Make Reservation</h4>
+            <div class="form-group">
+              <label for="formGroupExampleInput">Party Size</label>
+              <select id="selectparty" class="form-control">
+                <option selected>one person</option>
+                <option>two person</option>
+              </select>
+            </div>
+            <div class="form-group">
+              <label for="formGroupExampleInput">date</label>
+              <input type="date" class="form-control">
+            </div>
+            <div class="form-group">
+              <label for="formGroupExampleInput">time</label>
+              <input type="time" class="form-control">
+            </div>
+            <div class="form-group">
+              <label for="formGroupExampleInput2">Select Dining</label>
+              <select id="selectparty" class="form-control">
+                <option selected>Family</option>
+                <option>Private dining</option>
+                <option>out Door</option>
+                <option>Couples</option>
+              </select>
+            </div>
+            <div class="form-group">
+              <label for="formGroupExampleInput2">Select Food</label>
+              <select id="selectparty" class="form-control">
+                <option selected>demo1</option>
+                <option>demo2</option>
+                <option>demo3</option>
+                <option>demo4</option>
+              </select><i class="fa fa-plus" style="float: right;"></i>
+
+            </div>
+            <div class="form-group">
+              <label for="exampleFormControlTextarea1">other requirments</label>
+              <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
+            </div>
+            <div style="text-align: center;border: black;" class="py-lg-3 font-weight-bold text-danger">$150</div>
+
+
+            <div class="form-group">
+              <button type="button" class="btn bg-success" style="color: rgb(255, 255, 255);" >Check Availability</button>
+            </div>
+
+
+          </form>
+        </div>
+
+
+
+      </div>
+
+
+
+    </div>
+  </div>
+
+  <div class="p-5 container">
+    <div class="container p-5 p-lg-5">
+      <link href="//maxcdn.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css" rel="stylesheet" id="bootstrap-css">
+<script src="//maxcdn.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.min.js"></script>
+<script src="//cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+<!------ Include the above in your HEAD tag ---------->
+
+<!-- <div class="container"> -->
+<div class="row">
+            <div class="col-12 col-sm-6 col-md-4 image-grid-item">
+              <div style="background-image: url(https://cdn.beam.usnews.com/dims4/USNEWS/59f1d50/2147483647/thumbnail/970x647/quality/90/?url=http%3A%2F%2Fcom-usnews-beam-media.s3.amazonaws.com%2F28%2F21%2F37a23a5f40048594e7e1209a842d%2F150427-networking-stock.jpg  );" class="image-grid-cover">
+                <a href="#" class="image-grid-clickbox"></a>
+                <a href="#" class="cover-wrapper"><h1 style="color: black;font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;">IMAGES</h1></a>
+              </div>
+            </div>
+            <div class="col-12 col-sm-6 col-md-4 image-grid-item">
+              <div style="background-image: url(../static/images/r1.jpg );" class="entry-cover image-grid-cover has-image">
+                <!-- <a href="#" class="image-grid-clickbox"></a>
+                <a href="#" class="cover-wrapper">Düğünler</a> -->
+              </div>
+            </div>
+            <div class="col-12 col-sm-6 col-md-4 image-grid-item">
+              <div style="background-image: url(../static/images/r2.jpg  );" class="entry-cover image-grid-cover has-image">
+                <!-- <a href="#" class="image-grid-clickbox"></a>
+                <a href="#" class="cover-wrapper">Gezi / Tur</a> -->
+              </div>
+            </div>
+            <div class="col-12 col-sm-6 col-md-4 image-grid-item">
+              <div style="background-image: url(../static/images/r3.jpg);" class="entry-cover image-grid-cover has-image">
+                <!-- <a href="#" class="image-grid-clickbox"></a>
+                <a href="#" class="cover-wrapper">Havalimanı Transferi</a> -->
+              </div>
+            </div>
+            <div class="col-12 col-sm-6 col-md-4 image-grid-item">
+              <div style="background-image: url(../static/images/r4.jpg );" class="entry-cover image-grid-cover has-image">
+                <!-- <a href="#" class="image-grid-clickbox"></a>
+                <a href="#" class="cover-wrapper">Günlük Seyahat</a> -->
+              </div>
+            </div>
+            <div class="col-12 col-sm-6 col-md-4 image-grid-item">
+              <div style="background-image: url(../static/images/r5.jpg  );" class="entry-cover image-grid-cover has-image">
+                <!-- <a href="#" class="image-grid-clickbox"></a>
+                <a href="#" class="cover-wrapper">Karavan Kiralama </a> -->
+              </div>
+            </div>
+          </div>
+<!-- </div> -->
+
+    </div>
+
+    <style>
+      .image-grid-cover {
+    width: 100%;
+    background-size: cover;
+    min-height: 180px;
+    position: relative;
+    margin-bottom: 30px;
+    text-shadow: rgba(0,0,0,.8) 0 1px 0;
+    border-radius: 4px;
+}
+.image-grid-clickbox {
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    display: block;
+    width: 100%;
+    height: 100%;
+    z-index: 20;
+    /* background: rgba(0,0,0,.45); */
+}
+.cover-wrapper {
+    font-size: 18px;
+    text-align: center;
+    display: block;
+    color: #fff;
+    text-shadow: rgba(0,0,0,.8) 0 1px 0;
+    z-index: 21;
+    position: relative;
+    top: 80px;
+}
+a, a:focus, a:hover {
+    text-decoration: none;
+    outline: 0;
+}
+    </style>
+    <h4 class="pl-5 pt-4">Review</h4>
+    <!-- <div class="shadow"> -->
+      <div class="row shadow py-lg-5 pb-2">
+
+
+
+        <div class="col-lg-2 border-primary" style=""><i class="fa fa-user-circle fa-5x"></i></div>
+        <div class="col-lg-10">
+          <p class="font-weight-bold">Shadil K M</p>
+          <hr>
+          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Laboriosam cum tempora, distinctio doloremque
+            maxime, et culpa deleniti ipsa nisi modi nesciunt dolorem sint aut impedit eaque architecto eius esse
+            corporis?</p>
+          <i class="f"></i>
+        </div>
+        <hr>
+      </div>
+      <div class="row shadow py-lg-5 pb-2">
+
+        <div class="col-lg-2 border-primary" style=""><i class="fa fa-user-circle fa-5x"></i></div>
+        <div class="col-lg-10">
+          <p class="font-weight-bold">Shadil K M</p>
+          <hr>
+          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Laboriosam cum tempora, distinctio doloremque
+            maxime, et culpa deleniti ipsa nisi modi nesciunt dolorem sint aut impedit eaque architecto eius esse
+            corporis?</p>
+        </div>
+        <hr>
+      </div>
+      <div class="row shadow py-lg-5 pb-2">
+
+        <div class="col-lg-2 border-primary" style=""><i class="fa fa-user-circle fa-5x"></i></div>
+        <div class="col-lg-10">
+          <p class="font-weight-bold">Shadil K M</p>
+          <hr>
+          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Laboriosam cum tempora, distinctio doloremque
+            maxime, et culpa deleniti ipsa nisi modi nesciunt dolorem sint aut impedit eaque architecto eius esse
+            corporis?</p>
+        </div>
+        <hr>
+      </div>
+      <div class="row shadow py-lg-5 pb-2">
+
+        <div class="col-lg-2 border-primary" style=""><i class="fa fa-user-circle fa-5x"></i></div>
+        <div class="col-lg-10">
+          <p class="font-weight-bold">Shadil K M</p>
+          <hr>
+          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Laboriosam cum tempora, distinctio doloremque
+            maxime, et culpa deleniti ipsa nisi modi nesciunt dolorem sint aut impedit eaque architecto eius esse
+            corporis?</p>
+        </div>
+        <hr>
+      </div>
+    <!-- </div> -->
+
+    <div class="shadow p-5">
+      <input type="text" placeholder="comments.." class=" w-50" style="border-radius: 20; align-items: center;">
+      <a href="" type="button" class="btn btn-outline-light btn-lg mb-lg-10"><i class="fa fa-send bg-primary p-lg-3 fa-1x"></i></a>
+    </div>
+    <br><br><br><br>
+    <div></div>
+  </div>
+  </div>
+
+
+
+  <div>
+    <footer class="footer-section">
+      <div class="container">
+        <div class="footer-cta pt-5 pb-5">
+          <div class="row">
+            <div class="col-xl-4 col-md-4 mb-30">
+              <div class="single-cta">
+                <i class="fas fa-map-marker-alt"></i>
+                <div class="cta-text">
+                  <h4>Find us</h4>
+                  <span>1010 Avenue, sw 54321, chandigarh</span>
+                </div>
+              </div>
+            </div>
+            <div class="col-xl-4 col-md-4 mb-30">
+              <div class="single-cta">
+                <i class="fa fa-phone"></i>
+                <div class="cta-text">
+                  <h4>Call us</h4>
+                  <span>9876543210 0</span>
+                </div>
+              </div>
+            </div>
+            <div class="col-xl-4 col-md-4 mb-30">
+              <div class="single-cta">
+                <i class="fa fa-envelope-open"></i>
+                <div class="cta-text">
+                  <h4>Mail us</h4>
+                  <span>mail@info.com</span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="footer-content pt-5 pb-5">
+          <div class="row">
+            <!-- <div class="col-xl-4 col-lg-4 mb-50">
                       <div class="footer-widget">
                           <div class="footer-logo">
                              
@@ -377,87 +495,89 @@
                           </div>
                       </div>
                   </div> -->
-                  <div class="col-xl-4 col-lg-4 col-md-6 mb-30">
-                      <div class="footer-widget">
-                          <div class="footer-widget-heading">
-                              <h3>Discover</h3>
-                          </div>
-                          <ul>
-                              <li><a href="#">Trending Restaurent</a></li>
-                              <li><a href="#">Private Dining</a></li>
-                              <li><a href="#">Reserve for others</a></li>
-                              <li><a href="#">Cuisines Near Me</a></li>
-                              <li><a href="#">Restaurent Near Me</a></li>
-                              <li><a href="#">Delivery Near Me</a></li>
-                              <li><a href="#">Restaurent Open Now</a></li>
-                             
-                          </ul>
-                      </div>
-                  </div>
-  
-                  <div class="col-xl-4 col-lg-4 col-md-6 mb-30">
-                    <div class="footer-widget">
-                        <div class="footer-widget-heading">
-                            <h3>Top Facilities</h3>
-                        </div>
-                        <ul>
-                            <li><a href="#">Romantic</a></li>
-                            <li><a href="#">Fine Dining</a></li>
-                            <li><a href="#">Buffet</a></li>
-                            <li><a href="#">5 star</a></li>
-                            <li><a href="#">pure veg</a></li>
-                            <li><a href="#">Roof Top</a></li>
-                           
-                        </ul>
-                    </div>
+            <div class="col-xl-4 col-lg-4 col-md-6 mb-30">
+              <div class="footer-widget">
+                <div class="footer-widget-heading">
+                  <h3>Discover</h3>
                 </div>
-  
-                <div class="col-xl-4 col-lg-4 col-md-6 mb-30">
-                  <div class="footer-widget">
-                      <div class="footer-widget-heading">
-                          <h3>Top Facilities</h3>
-                      </div>
-                      <ul>
-                          <li><a href="#">Romantic</a></li>
-                          <li><a href="#">Fine Dining</a></li>
-                          <li><a href="#">Buffet</a></li>
-                          <li><a href="#">5 star</a></li>
-                          <li><a href="#">pure veg</a></li>
-                          <li><a href="#">Roof Top</a></li>
-                         
-                      </ul>
-                  </div>
+                <ul>
+                  <li><a href="#">Trending Restaurent</a></li>
+                  <li><a href="#">Private Dining</a></li>
+                  <li><a href="#">Reserve for others</a></li>
+                  <li><a href="#">Cuisines Near Me</a></li>
+                  <li><a href="#">Restaurent Near Me</a></li>
+                  <li><a href="#">Delivery Near Me</a></li>
+                  <li><a href="#">Restaurent Open Now</a></li>
+
+                </ul>
               </div>
-              <div class="col-xl-4 col-lg-4 mb-50">
-                <div class="footer-widget">
-                    <div class="footer-logo">
-                       
-                    </div>
-                    <div class="footer-text">
-                        <p>Lorem ipsum dolor sit amet, consec tetur adipisicing elit, sed do eiusmod tempor incididuntut consec tetur adipisicing
-                        elit,Lorem ipsum dolor sit amet.</p>
-                    </div>
-                    <div class="footer-social-icon">
-                        <span>Follow us</span>
-                        <a href="#"><i class="fa fa-facebook-f facebook-bg"></i></a>
-                        <a href="#"><i class="fa fa-twitter twitter-bg"></i></a>
-                        <a href="#"><i class="fab fa-google-plus-g google-bg"></i></a>
-                    </div>
-                </div>
             </div>
-                
+
+            <div class="col-xl-4 col-lg-4 col-md-6 mb-30">
+              <div class="footer-widget">
+                <div class="footer-widget-heading">
+                  <h3>Top Facilities</h3>
+                </div>
+                <ul>
+                  <li><a href="#">Romantic</a></li>
+                  <li><a href="#">Fine Dining</a></li>
+                  <li><a href="#">Buffet</a></li>
+                  <li><a href="#">5 star</a></li>
+                  <li><a href="#">pure veg</a></li>
+                  <li><a href="#">Roof Top</a></li>
+
+                </ul>
               </div>
+            </div>
+
+            <div class="col-xl-4 col-lg-4 col-md-6 mb-30">
+              <div class="footer-widget">
+                <div class="footer-widget-heading">
+                  <h3>Top Facilities</h3>
+                </div>
+                <ul>
+                  <li><a href="#">Romantic</a></li>
+                  <li><a href="#">Fine Dining</a></li>
+                  <li><a href="#">Buffet</a></li>
+                  <li><a href="#">5 star</a></li>
+                  <li><a href="#">pure veg</a></li>
+                  <li><a href="#">Roof Top</a></li>
+
+                </ul>
+              </div>
+            </div>
+            <div class="col-xl-4 col-lg-4 mb-50">
+              <div class="footer-widget">
+                <div class="footer-logo">
+
+                </div>
+                <div class="footer-text">
+                  <p>Lorem ipsum dolor sit amet, consec tetur adipisicing elit, sed do eiusmod tempor incididuntut
+                    consec tetur adipisicing
+                    elit,Lorem ipsum dolor sit amet.</p>
+                </div>
+                <div class="footer-social-icon">
+                  <span>Follow us</span>
+                  <a href="#"><i class="fa fa-facebook-f facebook-bg"></i></a>
+                  <a href="#"><i class="fa fa-twitter twitter-bg"></i></a>
+                  <a href="#"><i class="fab fa-google-plus-g google-bg"></i></a>
+                </div>
+              </div>
+            </div>
+
           </div>
+        </div>
       </div>
       <div class="copyright-area">
-          <div class="container">
-              <div class="row">
-                  <div class="col-xl-6 col-lg-6 text-center text-lg-left">
-                      <div class="copyright-text">
-                          <p>Copyright &copy; 2021, All Right Reserved <a href="https://codepen.io/anupkumar92/">BookmyTable.com</a></p>
-                      </div>
-                  </div>
-                  <!-- <div class="col-xl-6 col-lg-6 d-none d-lg-block text-right">
+        <div class="container">
+          <div class="row">
+            <div class="col-xl-6 col-lg-6 text-center text-lg-left">
+              <div class="copyright-text">
+                <p>Copyright &copy; 2021, All Right Reserved <a
+                    href="https://codepen.io/anupkumar92/">BookmyTable.com</a></p>
+              </div>
+            </div>
+            <!-- <div class="col-xl-6 col-lg-6 d-none d-lg-block text-right">
                       <div class="footer-menu">
                           <ul>
                               <li><a href="#">Home</a></li>
@@ -468,13 +588,14 @@
                           </ul>
                       </div>
                   </div> -->
-              </div>
           </div>
+        </div>
       </div>
-  </footer>
-</div>
+    </footer>
+  </div>
 
 
-<!-- footer end -->
+  <!-- footer end -->
 </body>
+
 </html>
