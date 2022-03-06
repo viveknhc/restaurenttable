@@ -1,192 +1,119 @@
 {% extends 'master1.html' %}
 {% block content %}
 {% load static %}
-<a href="goto">abc
+    <div class="m-lg-5">
+        <div class="col-lg-8 col-md-12 col-12 p-4 hori-card">
+            <h5 class="pl-5 pb-2 pt-2" style="text-align: center;">101 Results</h5>
+            <div class="card" style="max-width:750px;">
+                <a href="goto">
+                    <div class="row no-gutters">
+                        <div class="col-md-4 p-1">
+                            <img src="{% static 'images/r3.jpg' %}" class="img-fluid" alt="...">
+                        </div>
+                        <div class="col-md-8">
+                            <div class="card-body p-3">
+                                <h5>Paragon</h5>
+                                <p class="card-text m-0" style="font-size: 14px;">Calicut,Kerala</p>
+                                <p class="card-text m-0"><small class="text-muted">
+                                        <i class="fa fa-star text-warning"></i>
+                                </p>
+                                </small>
+                                <div class="book-btn text-right">
+                                    <button>Accept</button>
+                                    <button class="bg-success" >Reject</button>
 
-</a>
-<header class=" text-center py-5 mb-4 new">
-  <div class="container">
-      <h1 class="font-weight-light text-white"><a href="goto">Our Team</a> </h1>
-  </div>
-</header>
-<div class="container ">
-  <div class="row">
-      <div class="col-xl-3 col-md-6 mb-4 ">
-          <div class="card border-0 ">
-              <div class="flip-card">
-                  <div class="flip-card-inner">
-                      <div class="flip-card-front"> <img src="https://images.unsplash.com/photo-1556157382-97eda2d62296?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=400&q=80" class="card-img-top" alt="avatar">
-                          <div class="card-body text-center ">
-                              <h5 class="card-title mb-0">Member One</h5>
-                              <div class="card-text text-black-50">Team Lead</div>
-                          </div>
-                      </div>
-                      <div class="flip-card-back">
-                          <h1 class="person text- ">Member One</h1>
-                          <p class="description text-black-50">This is some description about the member of the team, which appears at the back of card and the image appears at the top of the front side with their social media links and the position of the member.</p> <a href="#" class="fa fa-facebook"></a> <a href="#" class="fa fa-twitter"></a> <a href="#" class="fa fa-linkedin"></a>
-                      </div>
-                  </div>
-              </div>
-          </div>
-      </div>
-      <div class="col-xl-3 col-md-6 mb-4">
-          <div class="card border-0 ">
-              <div class="flip-card">
-                  <div class="flip-card-inner">
-                      <div class="flip-card-front"> <img src="https://images.unsplash.com/photo-1557862921-37829c790f19?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1351&q=80" class="card-img-top" alt="avatar">
-                          <div class="card-body text-center ">
-                              <h5 class="card-title mb-0">Member Two</h5>
-                              <div class="card-text text-black-50">Web Developer</div>
-                          </div>
-                      </div>
-                      <div class="flip-card-back">
-                          <h1 class="person text- ">Member Two</h1>
-                          <p class="description text-black-50">This is some description about the member of the team, which appears at the back of card and the image appears at the top of the front side with their social media links and the position of the member.</p> <a href="#" class="fa fa-facebook"></a> <a href="#" class="fa fa-twitter"></a> <a href="#" class="fa fa-linkedin"></a>
-                      </div>
-                  </div>
-              </div>
-          </div>
-      </div>
-      <div class="col-xl-3 col-md-6 mb-4">
-          <div class="card border-0 ">
-              <div class="flip-card">
-                  <div class="flip-card-inner">
-                      <div class="flip-card-front"> <img src="https://images.unsplash.com/photo-1496345875659-11f7dd282d1d?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=750&q=80" class="card-img-top" alt="avatar">
-                          <div class="card-body text-center ">
-                              <h5 class="card-title mb-0">Member Three</h5>
-                              <div class="card-text text-black-50">Software Tester</div>
-                          </div>
-                      </div>
-                      <div class="flip-card-back">
-                          <h1 class="person text- ">Member Three</h1>
-                          <p class="description text-black-50">This is some description about the member of the team, which appears at the back of card and the image appears at the top of the front side with their social media links and the position of the member.</p> <a href="#" class="fa fa-facebook"></a> <a href="#" class="fa fa-twitter"></a> <a href="#" class="fa fa-linkedin"></a>
-                      </div>
-                  </div>
-              </div>
-          </div>
-      </div>
-      <div class="col-xl-3 col-md-6 mb-4">
-          <div class="card border-0 ">
-              <div class="flip-card">
-                  <div class="flip-card-inner">
-                      <div class="flip-card-front"> <img src="https://images.unsplash.com/photo-1473700216830-7e08d47f858e?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=400&q=80" class="card-img-top" alt="avatar">
-                          <div class="card-body text-center ">
-                              <h5 class="card-title mb-0">Member Four</h5>
-                              <div class="card-text text-black-50">Web Designer</div>
-                          </div>
-                      </div>
-                      <div class="flip-card-back">
-                          <h1 class="person text- ">Member Four</h1>
-                          <p class="description text-black-50">This is some description about the member of the team, which appears at the back of card and the image appears at the top of the front side with their social media links and the position of the member .</p> <a href="#" class="fa fa-facebook"></a> <a href="#" class="fa fa-twitter"></a> <a href="#" class="fa fa-linkedin"></a>
-                      </div>
-                  </div>
-              </div>
-          </div>
-      </div>
-      <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
-      <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
-      <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
-</body>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </a>
 
-<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
-<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
-<link rel="stylesheet" type="text/css" href="Team.css">
-<link href="https://fonts.googleapis.com/css?family=Yrsa:400,600&display=swap" rel="stylesheet">
+            </div>
 
-<style>
-  .fa {
-    padding: 10px;
-    margin: 10px;
-    width: 38px;
-    border-radius: 50%;
-    text-align: center;
-    text-decoration: none
-}
+            <div class="card" style="max-width:750px;">
+                <a href="goto">
+                    <div class="row no-gutters">
+                        <div class="col-md-4 p-1">
+                            <img src="{% static 'images/r3.jpg' %}" class="img-fluid" alt="...">
+                        </div>
+                        <div class="col-md-8">
+                            <div class="card-body p-3">
+                                <h5>Paragon</h5>
+                                <p class="card-text m-0" style="font-size: 14px;">Calicut,Kerala</p>
+                                <p class="card-text m-0"><small class="text-muted">
+                                        <i class="fa fa-star text-warning"></i>
+                                </p>
+                                </small>
+                                <div class="book-btn text-right">
+                                    <button>Accept</button>
+                                    <button class="bg-success" >Reject</button>
 
-.fa:hover {
-    opacity: 0.7
-}
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </a>
 
-.fa-facebook {
-    background: #3B5998;
-    color: white
-}
+            </div> </div>
 
-.fa-twitter {
-    background: #55ACEE;
-    color: white
-}
+            <style>
+                .hori-card a {
+                    color: black;
+                    text-decoration: none;
+                }
 
-.fa-linkedin {
-    background: #007bb5;
-    color: white
-}
+                .hori-card img {
+                    height: 188px;
+                    width: 249px;
+                    border-radius: 5px 0 0 5px;
+                }
 
-h1 {
-    font-family: 'Yrsa', serif;
-    font-size: 50px
-}
+                @media (max-width: 576px) {
+                    .hori-card img {
+                        height: 165px;
+                    }
+                }
 
-.flip-card {
-    background-color: transparent;
-    width: 260px;
-    height: 100px;
-    perspective: 1000px
-}
+                .results {
+                    width: 846px;
+                    height: 50px;
+                }
 
-.flip-card-inner {
-    width: 260px;
-    height: 300px;
-    text-align: center;
-    transition: transform 0.8s;
-    transform-style: preserve-3d
-}
+                .results h6 {
+                    padding: 55px 0 0 48px;
+                }
 
-.flip-card:hover .flip-card-inner {
-    transform: rotateY(180deg)
-}
+                .pagination .btn {
+                    border: 1px solid #d9d9d9;
+                    margin: 5px;
+                }
 
-.flip-card-front,
-.flip-card-back {
-    position: absolute;
-    width: 100%;
-    height: 100%;
-    backface-visibility: hidden
-}
+                .pagination .btn:hover {
+                    border-color: #8c8c8c;
+                }
 
-.flip-card-front {
-    background-color: #bbb;
-    color: black
-}
+                .pagination i {
+                    font-size: 15px;
+                    font-weight: 500;
+                }
 
-.flip-card-back {
-    transform: rotateY(180deg);
-    width: 260px;
-    height: 300px;
-    background-color: #f2f2f2
-}
+                .hori-card .card {
+                    border: none;
+                    margin: 20px 30px 20px 30px;
+                    border-radius: 5px;
+                    box-shadow: rgba(17, 17, 26, 0.05) 0px 1px 0px, rgba(17, 17, 26, 0.1) 0px 0px 8px;
+                }
 
-.card-title {
-    color: #007b5e;
-    padding: 20px
-}
-
-header {
-    background-color: #007b5e
-}
-
-.person {
-    color: #007b5e;
-    font-family: 'Yrsa', serif;
-    font-size: 30px;
-    padding: 15px
-}
-}
-
-.card-body {
-    background-color: #f2f2f2
-}
-</style>
+                .hori-card .book-btn button {
+                    border: 1px solid;
+                    background-color: #FF645A;
+                    color: white;
+                    border-radius: 3px;
+                    height: 33px;
+                    width: 100px;
+                    margin: 20px 20px 0 0;
+                }
+            </style>
 
 
-{% endblock %}
+            {% endblock %}

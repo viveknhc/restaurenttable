@@ -1,8 +1,105 @@
 {% extends 'master1.html' %}
 {% block content %}
 {% load static %}
-<div class="p-5">
-    <div class="p-5">
+<div class="p-5 p-lg-5">
+  <div style="text-align: center;" class="pb-5">DETAILS OF RESTAURANT</div>
+  <div class="container">
+    <div class="row">
+      <div class="col-lg-3">
+      <div class="p-lg-2" >
+        <img src="{% static 'images/r3.jpg' %}" alt="" style="height: 200px;width: 300px;" class="shadow">
+        
+      </div>
+      </div>
+      <div class="col-lg-9 ">
+        <div class="pl-lg-5">
+          <table class="table table-bordered">
+            
+              <tr>
+                <th>Restaurant Name :</th>
+              <th>Paragon</th>
+              </tr>
+            
+              <tr>
+                <th>Owner Name</th>
+                <th>Shadil KM</th>
+              </tr>
+              <tr>
+                <th>Email</th>
+                <th>abc@gmail.com</th>
+              </tr>
+              <tr>
+                <th>State</th>
+                <th>Kerala</th>
+              </tr>
+              <tr>
+                <th>city</th>
+                <th>Calicut</th>
+              </tr>
+              <tr>
+                <th>PIN</th>
+                <th>673638</th>
+              </tr>
+              <tr>
+                <th>Registration Fee</th>
+                <th>Paid</th>
+              </tr>
+             
+             
+          </table>
+        </div>
+      <div></div>
+      </div>
+    </div>
+  <div class="pt-lg-5 row shadow-lg">
+    <div class="col-lg-4 "  style="border-radius: 20px;">
+      <h3 class="p-lg-3">NUMBER OF TABLES</h3>
+      <h1 class="p-lg-5">30</h1>
+      
+    </div>
+    <div class="col-lg-4 "  style="border-radius: 20px;">
+      <h3 class="p-lg-3">NUMBER OF CHAIRES</h3>
+      <h1 class="p-lg-5">180</h1>
+    </div>
+    <div class="col-lg-4"  style="border-radius: 20px;">
+      <h3 class="p-lg-3">EACH TABLE CARRIES HOW MANY CHAIRES</h3>
+    <h1 class="p-lg-5">6</h1></div>
+  </div>
+  <div style="text-align: center;" class="py-lg-5">Photos</div>
+
+  <div>
+    <div class="row row-cols-1 row-cols-md-2">
+      <div class="col mb-4">
+        <div class="card h-75">
+          <img src="{% static 'images/r1.jpg' %}" class="card-img-top" alt="..." style="height: 300px;">
+          
+        </div>
+      </div>
+      <div class="col mb-4 h-75">
+        <div class="card">
+          <img src="{% static 'images/r3.jpg' %}" class="card-img-top" alt="...">
+          
+        </div>
+      </div>
+      <div class="col mb-4">
+        <div class="card h-75">
+          <img src="{% static 'images/r2.jpg' %}" class="card-img-top" alt="..." style="height: 300px;">
+          
+        </div>
+      </div>
+      <div class="col mb-4">
+        <div class="card">
+          <img src="{% static 'images/r4.jpg' %}" class="card-img-top" alt="...">
+          
+        </div>
+      </div>
+    </div>
+  </div>
+  <div>
+    <a href="addrest" class="btn btn-primary">close</a>
+  </div>
+  
+    <!-- <div class="p-5">
         <div class="p-5">
 
             <div>
@@ -55,6 +152,11 @@
 
     </div>
 </div>
+  --> 
+
+
+
+
 </div>
 </div>
 {% endblock %}
